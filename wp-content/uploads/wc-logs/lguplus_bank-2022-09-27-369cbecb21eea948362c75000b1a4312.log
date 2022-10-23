@@ -1,0 +1,74 @@
+09-27-2022 @ 17:18:57 - Process Payment Response : fail
+09-27-2022 @ 17:18:57 - [오류] [PAFW-ERR-S053] 사용자가 결제를 취소하였습니다
+Array
+(
+    [type] => fail
+    [res_cd] => S053
+    [res_msg] => 사용자가 결제를 취소하였습니다
+    [transaction_id] => TLGUPLUS20220927081726c02d8cf22445db1112e4
+    [order_id] => 10823
+    [woocommerce-login-nonce] => 
+    [_wpnonce] => 
+    [woocommerce-reset-password-nonce] => 
+)
+
+09-27-2022 @ 17:18:57 - Redirect : Checkout
+09-27-2022 @ 17:42:50 - Process Payment Response : fail
+09-27-2022 @ 17:42:50 - [오류] [PAFW-ERR-S053] 사용자가 결제를 취소하였습니다
+Array
+(
+    [type] => fail
+    [res_cd] => S053
+    [res_msg] => 사용자가 결제를 취소하였습니다
+    [transaction_id] => TLGUPLUS20220927084244f31d92492771ceaedc8d
+    [order_id] => 10826
+    [woocommerce-login-nonce] => 
+    [_wpnonce] => 
+    [woocommerce-reset-password-nonce] => 
+)
+
+09-27-2022 @ 17:42:50 - Redirect : Checkout
+09-27-2022 @ 18:32:12 - Process Payment Response : payment
+09-27-2022 @ 18:32:12 - [오류] [PAFW-ERR-9000] [E004] 200원 미만은 계좌이체가 안됩니다.
+Array
+(
+    [type] => payment
+    [transaction_id] => TLGUPLUS20220927093038ba050e9685efd76977fe
+    [auth_token] => ALGUPLUS2022092709321265ec7338c36fb16b63ca
+    [order_id] => 10830
+    [woocommerce-login-nonce] => 
+    [_wpnonce] => 
+    [woocommerce-reset-password-nonce] => 
+)
+
+09-27-2022 @ 18:32:13 - Redirect : Checkout
+09-27-2022 @ 18:34:10 - Process Payment Response : fail
+09-27-2022 @ 18:34:10 - [오류] [PAFW-ERR-S053] 사용자가 결제를 취소하였습니다
+Array
+(
+    [type] => fail
+    [res_cd] => S053
+    [res_msg] => 사용자가 결제를 취소하였습니다
+    [transaction_id] => TLGUPLUS20220927093232d311d2dfd82a09f610b0
+    [order_id] => 10830
+    [woocommerce-login-nonce] => 
+    [_wpnonce] => 
+    [woocommerce-reset-password-nonce] => 
+)
+
+09-27-2022 @ 18:34:10 - Redirect : Checkout
+09-27-2022 @ 18:34:15 - Process Payment Response : fail
+09-27-2022 @ 18:34:15 - [오류] [PAFW-ERR-S053] 사용자가 결제를 취소하였습니다
+Array
+(
+    [type] => fail
+    [res_cd] => S053
+    [res_msg] => 사용자가 결제를 취소하였습니다
+    [transaction_id] => TLGUPLUS20220927093413feb5ec28cc68ee25819f
+    [order_id] => 10830
+    [woocommerce-login-nonce] => 
+    [_wpnonce] => 
+    [woocommerce-reset-password-nonce] => 
+)
+
+09-27-2022 @ 18:34:15 - Redirect : Checkout

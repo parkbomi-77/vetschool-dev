@@ -1,0 +1,100 @@
+09-30-2022 @ 15:59:28 - Process Payment Response : payment
+09-30-2022 @ 15:59:32 - Redirect : Order Received
+09-30-2022 @ 16:01:16 - Process Payment Response : vbank_noti
+09-30-2022 @ 16:01:16 - 가상계좌 입금통보 시작 : 115.92.221.128
+09-30-2022 @ 16:01:16 - [PAFW-ERR-8004] 입금 통보가 아닙니다. [R]
+09-30-2022 @ 16:01:16 - Array
+(
+    [type] => vbank_noti
+    [PARAMTYPE] => XPAY
+    [PARAMENCODING] => EUC-KR
+    [LGD_BUYER] => 
+    [LGD_PRODUCTINFO] => test
+    [LGD_BUYERID] => 
+    [LGD_BUYERADDRESS] => 
+    [LGD_BUYERPHONE] => 
+    [LGD_BUYEREMAIL] => pakpomi33@hanmail.net
+    [LGD_BUYERSSN] => 
+    [LGD_PRODUCTCODE] => 
+    [LGD_RECEIVER] => 
+    [LGD_RECEIVERPHONE] => 
+    [LGD_DELIVERYINFO] => 
+    [LGD_CLOSEDATE] => 20221003235959
+    [LGD_TID] => CDM_v20220930155928gvdP1
+    [LGD_MID] => CDM_vetschool
+    [LGD_OID] => 10884_220930_065908
+    [LGD_AMOUNT] => 100
+    [LGD_CASTAMOUNT] => 0
+    [LGD_CASCAMOUNT] => 0
+    [LGD_PAYTYPE] => SC0040
+    [LGD_PAYDATE] => 20220930155928
+    [LGD_RESPCODE] => 0000
+    [LGD_RESPMSG] => 06:
+    [LGD_FINANCECODE] => 004
+    [LGD_FINANCENAME] => 
+    [LGD_ACCOUNTNUM] => 56569073796319
+    [LGD_PAYER] => 
+    [LGD_CASSEQNO] => 000
+    [LGD_CASFLAG] => R
+    [LGD_ESCROWYN] => 
+    [LGD_TIMESTAMP] => 20220930160115
+    [LGD_HASHDATA] => 7550afa8d39af519b055acc03c37872e
+    [CST_MID] => CDM_vetschool
+    [CST_PLATFORM] => service
+    [routed-from] => xpay
+    [x-tosspayments-global-trace-id] => 568545eb-f717-400a-ac21-f9863f2dad05
+    [woocommerce-login-nonce] => 
+    [_wpnonce] => 
+    [woocommerce-reset-password-nonce] => 
+)
+
+09-30-2022 @ 16:02:38 - Process Payment Response : payment
+09-30-2022 @ 16:02:42 - Redirect : Order Received
+09-30-2022 @ 16:04:15 - Process Payment Response : vbank_noti
+09-30-2022 @ 16:04:15 - 가상계좌 입금통보 시작 : 115.92.221.128
+09-30-2022 @ 16:04:15 - [PAFW-ERR-8004] 입금 통보가 아닙니다. [R]
+09-30-2022 @ 16:04:15 - Array
+(
+    [type] => vbank_noti
+    [PARAMTYPE] => XPAY
+    [PARAMENCODING] => EUC-KR
+    [LGD_BUYER] => 
+    [LGD_PRODUCTINFO] => 
+    [LGD_BUYERID] => 
+    [LGD_BUYERADDRESS] => 
+    [LGD_BUYERPHONE] => 
+    [LGD_BUYEREMAIL] => pakpomi33@hanmail.net
+    [LGD_BUYERSSN] => 
+    [LGD_PRODUCTCODE] => 
+    [LGD_RECEIVER] => 
+    [LGD_RECEIVERPHONE] => 
+    [LGD_DELIVERYINFO] => 
+    [LGD_CLOSEDATE] => 20221003235959
+    [LGD_TID] => CDM_v2022093016023881J60
+    [LGD_MID] => CDM_vetschool
+    [LGD_OID] => 10885_220930_070218
+    [LGD_AMOUNT] => 150000
+    [LGD_CASTAMOUNT] => 0
+    [LGD_CASCAMOUNT] => 0
+    [LGD_PAYTYPE] => SC0040
+    [LGD_PAYDATE] => 20220930160238
+    [LGD_RESPCODE] => 0000
+    [LGD_RESPMSG] => 06:
+    [LGD_FINANCECODE] => 004
+    [LGD_FINANCENAME] => 
+    [LGD_ACCOUNTNUM] => 56639073171812
+    [LGD_PAYER] => 
+    [LGD_CASSEQNO] => 000
+    [LGD_CASFLAG] => R
+    [LGD_ESCROWYN] => 
+    [LGD_TIMESTAMP] => 20220930160415
+    [LGD_HASHDATA] => a92db451e01d0da273442e17ed23b91d
+    [CST_MID] => CDM_vetschool
+    [CST_PLATFORM] => service
+    [routed-from] => xpay
+    [x-tosspayments-global-trace-id] => 096b503d-894d-4afd-883c-a8e3822c1fe6
+    [woocommerce-login-nonce] => 
+    [_wpnonce] => 
+    [woocommerce-reset-password-nonce] => 
+)
+
