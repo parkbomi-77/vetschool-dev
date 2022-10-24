@@ -175,10 +175,10 @@ if ( empty( $metabox_id ) ) {
 										continue;
 									}
 
-									// if($section['name'] === 'Registration') {
-									// 	include "/wp-content/plugins/masterstudy-lms-learning-management-system/nuxy/metaboxes/metabox-registration.php";
-									// 	continue;
-									// }
+									if($section['name'] === 'Registration') {
+										include $_SERVER['DOCUMENT_ROOT']."/wp-content/plugins/masterstudy-lms-learning-management-system/nuxy/metaboxes/metabox-registration.php";
+										continue;
+									}
 									// if($section['name'] === 'Inflowbox') {
 									// 	include "/Applications/MAMP/htdocs/wp-content/plugins/masterstudy-lms-learning-management-system/nuxy/metaboxes/metabox-gnuboard.php";
 									// 	continue;
