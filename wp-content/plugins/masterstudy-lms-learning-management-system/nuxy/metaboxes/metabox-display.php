@@ -175,6 +175,19 @@ if ( empty( $metabox_id ) ) {
 										continue;
 									}
 
+									// if($section['name'] === 'Registration') {
+									// 	include "/wp-content/plugins/masterstudy-lms-learning-management-system/nuxy/metaboxes/metabox-registration.php";
+									// 	continue;
+									// }
+									// if($section['name'] === 'Inflowbox') {
+									// 	include "/Applications/MAMP/htdocs/wp-content/plugins/masterstudy-lms-learning-management-system/nuxy/metaboxes/metabox-gnuboard.php";
+									// 	continue;
+									// }
+									if($section['name'] === 'shopping_mall') {
+										include $_SERVER['DOCUMENT_ROOT']."/wp-content/plugins/masterstudy-lms-learning-management-system/nuxy/metaboxes/metabox-shoppingmall.php";
+										continue;
+									}
+
 									wpcfto_metaboxes_display_single_field( $section, $section_name, $field, $field_name );
 
 								}
