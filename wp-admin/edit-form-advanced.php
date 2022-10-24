@@ -682,6 +682,11 @@ do_meta_boxes( $post_type, 'side', $post );
 
 ?>
 </div>
+<?php
+	if($post->post_type === 'stm-lessons'){
+		require ABSPATH . 'wp-admin/edit-form-playtime.php';
+	}
+?>
 <div id="postbox-container-2" class="postbox-container">
 <?php
 
