@@ -105,7 +105,7 @@
             $num = count($results);
             for($i=0; $i<$num; $i++){ 
                 $productname = $wpdb->get_results($wpdb->prepare("SELECT * from wp_product_list where ID =".$results[$i]->product_list_id));
-                if($productname[0]->mall_code === "1029"){ // 벳스쿨 제품일경우 벳스쿨 장바구니로 ?>
+                if($productname[0]->mall_code === "2"){ // 벳스쿨 제품일경우 벳스쿨 장바구니로 ?>
                     <?php      
                         $classname = "WC_Product_Simple";
                         $product = new $classname($productname[0]->product_code);
