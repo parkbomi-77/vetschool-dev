@@ -10,6 +10,7 @@
 
         #box {
             width: 28%;
+            height: 660px;
             background-color: rgb(17, 17, 19);
             border: 2px solid rgb(17, 17, 19);
             margin-top: 135px;
