@@ -61,7 +61,7 @@
         .box-cart{
             /* display: flex; */
             font-size: 20px;
-            width: 146px;
+            margin-right:4px;
         }
 
         .box-cart .quantity{
@@ -87,7 +87,18 @@
             padding: 0;
         }
 
-        @media screen and (max-width: 1632px) {
+        @media screen and (max-width: 1500px) {
+            .box-flex{
+                margin-top: 3px;
+            }
+            .box-cart{
+                /* margin-right:4px; */
+
+            }
+            .box-cart button{
+                width: 60px;
+                height: 60px;
+            }
 
         }
         .vetcart{
