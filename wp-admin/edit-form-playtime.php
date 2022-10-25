@@ -70,12 +70,17 @@
 }
 .addbtn{
     margin: 4px 0 0 24px;
-    width: 88.6%;
+    width: 856px;
     background-color: #2271b1;
     text-align: center;
     border-radius: 3px;
     line-height: 30px;
     color: whitesmoke;
+}
+@media screen and (max-width: 1470px) {
+    .addbtn{
+        width: 90px;
+    }
 }
 
 </style>
