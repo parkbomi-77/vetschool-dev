@@ -32,10 +32,10 @@
     <div class="shoppingmall-box">
         <table style="text-align:center;" class="shoppingmalltable">
             <colgroup>
-                <col width="5%">
-                <col width="16%">
-                <col width="34%">
-                <col width="34%">
+                <col width="10%">
+                <col width="17%">
+                <col width="31%">
+                <col width="31%">
                 <col width="13%">
             </colgroup>
             <thead>
