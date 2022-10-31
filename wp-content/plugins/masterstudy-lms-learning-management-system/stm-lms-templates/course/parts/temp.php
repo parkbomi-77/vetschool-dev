@@ -44,7 +44,7 @@
             color: #d6d6d6;
             height: 90px;
         }
-        #box>div:hover {
+        .boxbox>div:hover {
             background-color: rgb(59, 62, 59);
         }
         .box-flex{
@@ -113,13 +113,7 @@
     <p> <i class="fa-solid fa-store"></i> store</p>
     <div class="boxbox">
         <?php
-            // defined('ABSPATH') || exit;
             global $wpdb, $post;
-
-            // $classname = "WC_Product_Simple";
-            // $product = new $classname(10685);
-
-            //  do_action( 'woocommerce_' . $product->get_type() . '_add_to_cart' );
 
             // lesson 글에 해당하는 재생시간등록 결과 && 현재 광고중인 제품만 노출되도록 하기
             $results = $wpdb->get_results($wpdb->prepare("SELECT * FROM wp_play_time inner join wp_product_list on wp_play_time.product_list_id = wp_product_list.ID where wp_product_list.adv_state = 1 and wp_play_time.posts_lesson_id = $post->ID"));
@@ -135,7 +129,8 @@
                             $product = new $classname($productname[0]->product_code);
                         ?>
                         <div id= <?php echo $results[$i]->play_idx ?> style="display:none"> 
-                            <form id="wishform" method='POST' target="iframe1">
+                            <form id="wishform" method='POST' target="iframe1"
+                            action='/wp-content/plugins/masterstudy-lms-learning-management-system/stm-lms-templates/course/parts/temp_vetsubmit.php'>
                                 <iframe id="iframe1" name="iframe1" style="display:none"></iframe>
                                 <div class="box-flex">
                                     <div class="box-name">
@@ -147,18 +142,18 @@
                                         </div>
                                     </div>
                                     <div class="box-cart">
-                                        <input type="hidden" name="user_id" value="<?php echo $current_user->ID ?>">
-                                        <input type="hidden" name="item_id" value="<?php echo $results[$i]->product_list_id ?>">
-                                        <input type="hidden" name="product_code" value="<?php echo $productname[0]->product_code ?>">
+                                        <!-- <input type="hidden" name="user_id" value="<?php echo $current_user->ID ?>">
+                                        <input type="hidden" name="item_id" value="<?php echo $results[$i]->product_list_id ?>"> -->
+                                        <input type="hidden" name="product_code" value="<?php echo $productname[0]->product_code ?>"> 
+
                                         <!-- 쇼핑몰로 바로가기 -->
                                         <button type="submit" formaction="/page-shop.php">바로가기</button> 
                                         
-                                        <!-- 장바구니 담기 -->
-                                        <div class="vetcart" onclick="vetcartmodal()">
-                                            <?php do_action( 'woocommerce_' . $product->get_type() . '_add_to_cart' ); ?>
+                                        <!-- 장바구니 담기 --> 
+                                        <div class="vetcart">
+                                            <button type='submit'>장바구니</button>
                                         </div>
 
-                                        <!-- <button onclick="vetsubmit()"><i class="fa-solid fa-cart-shopping"></i></button> -->
                                     </div>
                                 </div>
                             </form>
@@ -229,7 +224,6 @@
                     let block = document.getElementById(<?= $results[$i]->play_idx ?>);
                     block.style.display = "block";
                     block.querySelector('.box-time').innerText = "<?php echo $time ?>";
-                    
                 }
             <?php
             } ?>
@@ -242,5 +236,10 @@
    function vetcartmodal() {
         alert('장바구니에 담았습니다');
    }
+   function vetcartmodal2(){
+        alert('이미 장바구니에 담았습니다');
+   }
+
+
 
 </script>
