@@ -86,7 +86,7 @@ stm_lms_register_style('expiration/main');
                                :href="course.url" target="_blank">
                                 <span><?php esc_html_e('Preview Course', 'masterstudy-lms-learning-management-system'); ?></span>
                             </a>
-                            <a v-bind:href="course.current_lesson_id" class="btn btn-default"
+                            <a v-bind:href="course.current_lesson_id+'/'" class="btn btn-default"
                                v-bind:class="{'continue' : course.progress !== '0'}"
                                v-else>
                                 <span v-if="course.progress === '0'"><?php esc_html_e('Start Course', 'masterstudy-lms-learning-management-system'); ?></span>

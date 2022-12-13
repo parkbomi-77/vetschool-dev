@@ -59,7 +59,7 @@ if (!$is_affiliate):
                 $btn_label = esc_html__('Start course', 'masterstudy-lms-learning-management-system-pro');
                 if($progress > 0) $btn_label = esc_html__('Continue', 'masterstudy-lms-learning-management-system-pro');
                 ?>
-                <a href="<?php echo esc_url($lesson_url); ?>" class="btn btn-default start-course">
+                <a href="<?php echo esc_url($lesson_url); ?>/" class="btn btn-default start-course">
                     <span><?php echo sanitize_text_field($btn_label); ?></span>
                 </a>
 

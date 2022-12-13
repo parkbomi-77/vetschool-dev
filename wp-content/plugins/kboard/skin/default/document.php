@@ -61,8 +61,8 @@
 						$type = substr($content->attach->$key[0], -3, 3);
 						$arr = ['jpg', 'peg', 'gif', 'png', 'bmp', 'pjp', 'peg', 'fif', 'svg', 'ebp', 'ico']; 
 						if(($type === 'jpg')|| ($type === 'peg') || ($type === 'gif') || ($type === 'png') || ($type === 'bmp')|| ($type === 'pjp') || ($type ==='peg') || ($type === 'fif') || ($type ==='svg') || ($type === 'ebp') || ($type === 'ico')) { ?>
-							<div style="width:250px">
-								<button style="line-height: 30px;" type="button" class="kboard-button-action kboard-button-download" onclick="window.location.href='<?php echo $url->getDownloadURLWithAttach($content->uid, $key)?>'" title="<?php echo sprintf(__('Download %s', 'kboard'), $attach[1])?>"><?php echo $attach[1]?><img src="<?php echo $content->attach->$key[0]?>"  style="object-fit:cover; height:190px; width:250px;"></button>
+							<div style="width:500px">
+								<button style="line-height: 30px;" type="button" class="kboard-button-action kboard-button-download" onclick="window.location.href='<?php echo $url->getDownloadURLWithAttach($content->uid, $key)?>'" title="<?php echo sprintf(__('Download %s', 'kboard'), $attach[1])?>"><?php echo $attach[1]?><img src="<?php echo $content->attach->$key[0]?>"  style="object-fit:cover; height:380px; width:500px;"></button>
 							</div>
 							<?php }else { ?>
 							<div>
