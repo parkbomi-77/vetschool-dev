@@ -22,7 +22,7 @@
             margin-left: -15px;
             margin-right: 13px;
         }
-        @media (max-width: 1100px) {
+        @media (max-width: 1245px) {
             .stm-lms-course__content{
                 flex-direction: column;
                 align-items: center;
@@ -36,6 +36,9 @@
             }
             .sample111>.container {
                 height: 55px;
+            }
+            iframe {
+                /* height: 60% */
             }
         }
         #box>p i {
